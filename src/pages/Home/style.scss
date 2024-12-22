@@ -93,8 +93,8 @@ main {
   margin-bottom: 64px;
 }
 .Title {
-  font-size: 50px;
-  font-family: "Space Grotesk", sans-serif;
+  fontSize: 50px;
+  fontFamily: "Space Grotesk", sans-serif;
   color: $primary;
   margin: 0;
   margin-top: 64px;
@@ -172,7 +172,7 @@ footer {
 }
 
 .ModalMessage--success {
-  font-family: "Manrope", sans-serif;
+  fontFamily: "Manrope", sans-serif;
   padding: 32px;
   width: 600px;
   display: flex;
@@ -182,7 +182,7 @@ footer {
   div {
     text-align: center;
     margin-bottom: 16px;
-    font-weight: 600;
+    fontWeight: 600;
     color: $primary;
   }
   p {

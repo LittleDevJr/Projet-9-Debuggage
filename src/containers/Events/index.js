@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable no-console */
+import { useState, useEffect } from "react";
 import EventCard from "../../components/EventCard";
 import Select from "../../components/Select";
 import { useData } from "../../contexts/DataContext";
@@ -11,12 +12,22 @@ const PER_PAGE = 9;
 
 const EventList = () => {
   const { data, error } = useData();
-  const [type, setType] = useState();
+  const [type, setType] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const filteredEvents = (
+  const [filteredEvents, setFilteredEvents] = useState([]);
+
+
+  useEffect (() => {
+    if (!data) return;
+
+    console.log("Data:", data); 
+     console.log("Type:", type); 
+      console.log("Current Page:", currentPage); 
+
+    const events = (
     (!type
       ? data?.events
-      : data?.events) || []
+      : data?.events.filter(event => event.type === type)) || []
   ).filter((event, index) => {
     if (
       (currentPage - 1) * PER_PAGE <= index &&
@@ -26,7 +37,12 @@ const EventList = () => {
     }
     return false;
   });
+  setFilteredEvents(events);
+  console.log("Filtered Events:", events);
+ }, [type, currentPage, data]);
+
   const changeType = (evtType) => {
+    console.log("Selected Type:", evtType);
     setCurrentPage(1);
     setType(evtType);
   };
@@ -42,7 +58,10 @@ const EventList = () => {
           <h3 className="SelectTitle">Catégories</h3>
           <Select
             selection={Array.from(typeList)}
-            onChange={(value) => (value ? changeType(value) : changeType(null))}
+            onChange={(value) =>{
+              console.log("Selected Value:", value); // Ajout de log
+               changeType(value);
+              }}
           />
           <div id="events" className="ListContainer">
             {filteredEvents.map((event) => (

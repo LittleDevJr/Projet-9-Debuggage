@@ -47,13 +47,13 @@
       color: white;
       border-radius: 8px;
       display: flex;
-      font-family: "Space Grotesk", sans-serif;
+      fontFamily: "Space Grotesk", sans-serif;
       h3 {
         width: 45%;
         border-right: 1px solid #4314ff;
         padding-left: 32px;
         min-height: 116px;
-        font-size: 30px;
+        fontSize: 30px;
         display: flex;
         align-items: center;
         margin: 0;
@@ -63,16 +63,16 @@
         display: flex;
         align-items: center;
         padding: 16px;
-        font-size: 18px;
+        fontSize: 18px;
       }
       div {
         width: 5%;
         display: flex;
         align-items: center;
         padding: 16px;
-        font-size: 12px;
+        fontSize: 12px;
         text-transform: uppercase;
-        font-weight: bold;
+        fontWeight: bold;
       }
     }
   }

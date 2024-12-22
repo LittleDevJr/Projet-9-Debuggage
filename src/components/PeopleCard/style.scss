@@ -11,7 +11,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: "Manrope", sans-serif;
+  fontFamily: "Manrope", sans-serif;
   margin-bottom: 32px;
   &__imageContainer {
     min-height: 252px;
@@ -19,22 +19,22 @@
   }
   &__descriptionContainer {
     color: $black;
-    font-size: 15px;
+    fontSize: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: 400;
+    fontWeight: 400;
     width: 80%;
   }
   &__name {
-    font-size: 20px;
-    font-weight: 500;
+    fontSize: 20px;
+    fontWeight: 500;
     text-transform: capitalize;
   }
   &__position {
     text-transform: capitalize;
-    font-size: 20px;
-    font-weight: bold;
+    fontSize: 20px;
+    fontWeight: bold;
     color: $primary;
   }
 }

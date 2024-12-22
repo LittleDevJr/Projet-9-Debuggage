@@ -13,18 +13,18 @@
   flex-direction: column;
   &__textContainer {
     color: $black;
-    font-size: 15px;
+    fontSize: 15px;
     display: flex;
     flex-direction: column;
-    font-weight: 400;
+    fontWeight: 400;
     padding: 30px;
     max-width: 278px;
     text-align: center;
     h3 {
-      font-size: 22px;
+      fontSize: 22px;
       margin-top: 12px;
       margin-bottom: 18px;
-      font-weight: 600;
+      fontWeight: 600;
     }
   }
 }

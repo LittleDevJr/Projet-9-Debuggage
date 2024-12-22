@@ -1,7 +1,7 @@
 @import "src/colors.scss";
 
 .ModalEvent {
-  font-family: "Manrope", sans-serif;
+  fontFamily: "Manrope", sans-serif;
   overflow: hidden;
   width: 450px;
   position: relative;
@@ -28,11 +28,11 @@
     justify-content: space-around;
     align-items: center;
     &Label {
-      font-size: 16px;
-      font-weight: 600;
+      fontSize: 16px;
+      fontWeight: 600;
     }
     &Periode {
-      font-size: 14px;
+      fontSize: 14px;
     }
   }
   margin-bottom: 32px;
@@ -44,10 +44,10 @@
     padding-left: 64px;
     padding-right: 64px;
     p {
-      font-size: 14px;
+      fontSize: 14px;
     }
     div {
-      font-size: 16px;
+      fontSize: 16px;
     }
   }
 }
